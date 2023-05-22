@@ -10,4 +10,7 @@
 #SBATCH --output=slurm-%x.out
 #SBATCH --error=slurm-%x.err
 
+. ~/vf38_scratch/spack/share/spack/setup-env.sh
+spack load mpich
+
 # Job commands here
